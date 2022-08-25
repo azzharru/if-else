@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if else #4</title>
+</head>
+<body>
+    <script>
+        //Даны три числа. Найти среднее из них (то есть число, расположенное между наименьшим и наибольшим).
+        var a,b,c;
+        a = +prompt("Enter a = ");
+        b = +prompt("Enter b = ");
+        c = +prompt("Enter c = ");
+        if ((a>b && a<c) || (a>c && a<b)){
+            alert("a = " + a);
+        }else if((b>a && b<c) || (b<a && b>c)){
+            alert("b = " + b);
+        }else if ((c<a && c>b) || (c>a && c<b)){
+            alert("c = " + c); 
+        }else if (a==b || a==c || b==c){
+            alert("Два одинаковых числа!")
+        }
+    </script>
+</body>
+</html>

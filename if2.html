@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if else #2</title>
+</head>
+<body>
+    <input type="text">
+    <script>
+        //Даны две переменные целого типа: A и B. Если их значения не равны, то присвоить каждой переменной большее из этих значений, а если равны, то присвоить переменным нулевые значения. Вывести новые значения переменных A и B.
+        var a,b;
+        a = +prompt("Enter A:");
+        b = +prompt("Enter B:");
+        if(a == b){
+            a = 0;
+            b = 0;
+        }else if(a>b){
+            b = a; 
+        }
+        else if (b>a){
+            a=b;
+        }
+        document.write("A:" + a);
+        document.write("B:" + b);
+    </script>
+</body>
+</html>

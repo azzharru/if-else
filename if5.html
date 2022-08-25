@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Даны три числа. Вывести вначале наименьшее, а затем наибольшее из данных чисел.
+        var a,b,c;
+        a = +prompt("a = ");
+        b = +prompt("b = ");
+        c = +prompt("c = ");
+        var max,min;
+        if((a<=b && a<=c)){
+            min = a;
+        }else if (b<=a && b<=c){
+            min = b;
+        }else{
+            min = c;
+        }
+
+        if (a>=b && a>=c){
+            max=a;
+        }else if(b>=a && b>=c){
+            max = b;
+        }else {
+            max = c;
+        }
+        alert("min= " + min);
+        alert("max= " + max);
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if else #6</title>
+</head>
+<body>
+    <script>
+        //Даны три переменные вещественного типа: A, B, C. Если их значения упорядочены по возрастанию, то удвоить их; в противном случае заменить значение каждой переменной на противоположное. Вывести новые значения переменных A, B, C.
+        let a,b,c;
+        a = +prompt("a = ");
+        b = +prompt("b = ");
+        c = +prompt("c = ");
+        if (a<=b && b<=c){
+            a+=a;
+            b+=b;
+            c+=c;
+        }else{
+            a-=a*2;
+            b-=b*2;
+            c-=c*2;
+        }
+        alert("a = " + a);
+        alert("b = " + b);
+        alert("c = " + c);
+    </script>
+</body>
+</html>
